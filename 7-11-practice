@@ -1,0 +1,11 @@
+<DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<form>
+<input type="button" value="click me" onclick="web1.html">
+</form>
+
+</body>
+</html>
