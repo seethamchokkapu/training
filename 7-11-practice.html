@@ -4,9 +4,12 @@
 </head>
 <body>
 <form>
-<input type="button" value="click me" onclick="login()">
+<input type="button" value="click me" onclick="popup() ,login()">
 </form>
 <script>
+function popup(){
+alert("enter account number and password");
+}
  function login(){
  window.location=("/home/feuji/java script/web1.html");
  }
