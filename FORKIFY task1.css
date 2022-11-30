@@ -160,23 +160,29 @@ background:white;
      padding:60px;
   }
   .btnpage5{
-          
+             width:30%;
            float:right;
            background-color:#F3F3F3;
-           border-radius:20%;
-		   margin-right:25px;
-		  color:red;
-		   padding:1%;
+		   border-radius:25%;
+		   position:relative;
+		   right:30px;
+		   padding:2%;
 		   border:none;
+		  color:red;
+		  font-size:18px;
+         
            }  
    .btnpage3{
+	   width:30%;
            float:left;
            background-color:#F3F3F3;
            border-radius:25%;
-		      margin-left:20px;
-			    padding:1%;
-				border:none;
-				color:red;
+		   position:relative;
+		   left:30px;
+		   padding:2%;
+		   border:none;
+		  color:red;
+		  font-size:18px;
            }                               
    .arrow{
       width:10px;
