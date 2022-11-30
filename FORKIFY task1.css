@@ -2,7 +2,7 @@ body      {
           background-image:linear-gradient(to bottom right,#fbdb89, #f48982,#f38e82);
           width:1200px;
           margin:auto;
-          //background-repeat:none;
+          
           }
 .container{
            width:1000px;
@@ -54,12 +54,13 @@ width:70%;
 border-radius: 25px;
 margin-top:5px;
  border:none;
-padding-top:18px;
-padding-bottom:13px;
+padding-top:16px;
+padding-bottom:12px;
 margin-left:9px;
 }
   .search-btn{
-       padding:13.5px;  
+       padding:10px;
+       padding-bottom:14px;	   
        float:left;
 	   background-image:linear-gradient(to bottom right,#fbdb89, #f48982,#f38e82);
 	   width:27%;
