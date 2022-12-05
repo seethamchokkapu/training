@@ -370,8 +370,9 @@ body{
 .list-ingridians li{
 	list-style:none;
 	float:left;
-	width:40%;
+	width:42%;
 	padding:8px;
+	padding-left:10px;
 	}
 
 .head-bottom{
