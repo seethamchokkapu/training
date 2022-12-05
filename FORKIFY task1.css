@@ -132,6 +132,7 @@ body{
 	 background-color:#FFFCFC;
 
 
+
 }
  
  button:hover{
@@ -140,6 +141,12 @@ body{
    .spanclr{
      color:red;
 	 font-size:18px;
+	 width:70%;
+	 display:block;
+	 white-space:nowrap;
+	  overflow:hidden;
+	 text-overflow:ellipsis;
+	 
    }       
 .imagepizza{
    float:left;
@@ -367,7 +374,8 @@ body{
 	position:relative;
 	bottom:40px;
 }
-.list-ingridians li{
+
+.list-ingridians ul li{
 	list-style:none;
 	float:left;
 	width:42%;
