@@ -11,7 +11,8 @@ body{
 	  margin:auto; 
 	  margin-top:10px;  
 	  border-radius:10px;
- 
+    
+       
  }
 .header  {
 	 width:100%;
@@ -132,16 +133,13 @@ body{
 
 
 }
- .text-left{
-	position:relative;
-	right:17px;
-	bottom:3px;
- }
+ 
  button:hover{
     background-color:lightgray;
  }     
    .spanclr{
      color:red;
+	 font-size:18px;
    }       
 .imagepizza{
    float:left;
@@ -369,7 +367,7 @@ body{
 	position:relative;
 	bottom:40px;
 }
-li{
+.list-ingridians li{
 	list-style:none;
 	float:left;
 	width:40%;
@@ -420,4 +418,9 @@ li{
 	  width:100%;
 	  
 	  }
-
+li{
+	list-style:none;
+}
+ul{
+	padding:20px  0px 20px 0px;
+}
