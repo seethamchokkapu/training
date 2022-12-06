@@ -301,32 +301,33 @@ body{
       }
      
   .timericon{
-		width:10%;
+		width:9%;
 	   position:relative;
-		top:12px;
-		left:45px;
+		top:13px;
+		left:47px;
   }   
   .peopleicon{
         width:10%;
 		position:relative;
 		left:200px;
 		
-		bottom:37px;
+		bottom:38px;
             }  
   .minusicon{
       width:16%;
-	 
+	  position:relative;
+	  bottom:3px;
   }
   .plusicon{
       width:16%;
       position:relative;
-	  bottom:1px;
+	  bottom:4px;
   } 
   .note-icn{
 	  width:24%;
 	 border-radius:50%;
 	 position:relative;
-	 bottom:58px;
+	 bottom:62px;
   }
  .head{
 	 color:red;
@@ -379,8 +380,8 @@ body{
 	list-style:none;
 	float:left;
 	width:42%;
-	padding:8px;
-	padding-left:10px;
+	padding:9px;
+	//padding-left:20px;
 	}
 
 .head-bottom{
