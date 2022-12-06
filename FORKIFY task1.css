@@ -6,7 +6,7 @@ body{
 	 }
 .container{
 	  width:1000px;
-	  height:1000px;
+	   height:1000px;
 	  background-color:white;
 	  margin:auto; 
 	  margin-top:10px;  
@@ -179,7 +179,7 @@ body{
    width:30%;
    float:right;
    background-color:#F3F3F3;
-   border-radius:37%;
+   border-radius:400px;
    position:relative;
    right:30px;
    padding:2%;
@@ -192,7 +192,7 @@ body{
    width:30%;
    float:left;
    background-color:#F3F3F3;
-   border-radius:37%;
+   border-radius:400px;
    position:relative;
    left:30px;
    padding:2%;
