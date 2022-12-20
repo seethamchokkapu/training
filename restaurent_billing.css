@@ -1,0 +1,95 @@
+header{
+    width:100%;
+    background-color: grey;
+    padding:10px;
+}
+.container{
+    width:100%;
+}
+.orders{
+    padding:20px;
+}
+.sidebar{
+    width:70%;
+    float:left;
+}
+.container_btns{
+    margin-top:30px;
+    padding:30px;
+    clear:left;
+    margin-left:10px;
+    width:20%;
+}
+.secondrow_container_btns{
+    margin-top:30px;
+    padding:30px;
+    clear:left;
+    margin-left:10px;
+    width:20%;
+}
+.thirdrow_container_btns{
+    margin-top:30px;
+    padding:30px;
+    clear:left;
+    margin-left:10px;
+    width:20%;
+}
+.fourthrow_container_btns{
+    margin-top:30px;
+    padding:30px;
+    clear:left;
+    margin-left:10px;
+    width:20%;
+}
+.fifthrow_container_btns{
+    margin-top:30px;
+    padding:30px;
+    clear:left;
+    margin-left:10px;
+    width:20%;
+}
+.right_bar{
+  width:30%;
+  background-color: gainsboro;
+  float:left;
+  margin-top: 30px;
+}
+.clear-btn{
+    float:right;
+    position:relative;
+    bottom:50px;
+    margin-right:10px;
+    color:blue;
+}
+.input-field{
+    width:90%;
+    padding:10px;
+    position:relative;
+    bottom:60px;
+}
+table{
+    width:100%;
+     position:relative;
+     bottom:15px;
+}
+table, tr,th,td   {
+    border:2px solid gray;
+}
+td{
+    padding:10px;
+}
+#order-ticket{
+    padding:10px;
+    float:left;
+    width:50%;
+    background-color: skyblue;
+}
+#charge{
+    padding:10px;
+    width:50%;
+    float:right;
+    background-color: green;
+}
+user_input{
+    text-align:center;
+}

@@ -1,0 +1,85 @@
+{
+    "items": [
+        {
+        "name":"Idle",
+        "price": 20
+       
+        },
+        {
+        "name":"Chapathi",
+        "price": 30
+       
+        },
+        {
+        "name":"Dosa",
+        "price": 30
+       
+        },
+        {
+        "name":"Wada",
+        "price": 25
+       
+        } ,
+        {
+        "name":"Puri",
+        "price":30
+       
+        },
+        {
+        "name":"Veg Fried Rice",
+        "price": 80
+       
+        } ,
+        {
+        "name":"Nonveg Fried Rice",
+        "price": 110
+       
+        },
+        {
+        "name":"Veg Biryani",
+        "price": 90
+       
+        } ,
+        {
+        "name":"NonVeg Biryani",
+        "price": 150
+       
+        },
+        {
+        "name":"Meals",
+        "price": 70
+       
+        },
+        {
+            "name":"upma",
+            "price": 70
+           
+        },
+        {
+            "name":"upma",
+            "price": 70
+           
+        },
+        {
+            "name":"veg soup",
+            "price": 70
+           
+        }, 
+        {
+            "name":"fruit juice",
+            "price": 80
+           
+        },
+        {
+            "name":"tea",
+            "price": 20
+           
+        },
+        {
+            "name":"lemon tea",
+            "price": 40
+           
+        }
+
+    ]
+}
