@@ -5,6 +5,7 @@ header{
 }
 .container{
     width:100%;
+    margin:auto;
 }
 .orders{
     padding:20px;
@@ -119,4 +120,7 @@ user_input{
 }
 .order-items{
     text-align: center;
+}
+.expand{
+    width:29%;
 }
