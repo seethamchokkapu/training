@@ -98,25 +98,6 @@
     }
   ],
   "orders": [
-    {
-      "customername": "naidu",
-      "discountamount": 43,
-      "totalAmount": 387,
-      "taxamount": 17.2,
-      "billamount": 404.2,
-      "orderitems": [
-        {
-          "name": "upma",
-          "price": 70,
-          "quantity": 1
-        },
-        {
-          "name": "Veg Biryani",
-          "price": 90,
-          "quantity": "4"
-        }
-      ],
-      "id": 1
-    }
+    
   ]
 }

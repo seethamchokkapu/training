@@ -81,11 +81,11 @@ function discountCalculations(){
 }                                                                         
 
 function changeInput(id) {
-   alert("hello");
+   //alert("hello");
   var changeuserInput=document.querySelectorAll(".user_input");
      enterValue=changeuserInput[id].value;
      selectedItems[id].quantity=enterValue;
-   alert(selectedItems[id].quantity);
+  // alert(selectedItems[id].quantity);
    table();
 }                             
 
@@ -101,7 +101,7 @@ orderTicketBtn.addEventListener("click",postData);
                                                      
 async function postData(){
    var custumerName=document.querySelector(".input-field");
-       alert("hai");
+      // alert("hai");
          await fetch("http://localhost:3000/orders",{
 
           method:"POST",
