@@ -98,6 +98,90 @@
     }
   ],
   "orders": [
-    
+    {
+      "customername": "",
+      "discountamount": 10.5,
+      "totalAmount": 94.5,
+      "taxamount": 4.2,
+      "billamount": 98.7,
+      "orderitems": [
+        {
+          "name": "VegFried Rice",
+          "price": 80,
+          "quantity": 1
+        },
+        {
+          "name": "Wada",
+          "price": 25,
+          "quantity": 1
+        }
+      ],
+      "id": 1
+    },
+    {
+      "customername": "",
+      "discountamount": 9.5,
+      "totalAmount": 85.5,
+      "taxamount": 3.8,
+      "billamount": 89.3,
+      "orderitems": [
+        {
+          "name": "Meals",
+          "price": 70,
+          "quantity": 1
+        },
+        {
+          "name": "Wada",
+          "price": 25,
+          "quantity": 1
+        }
+      ],
+      "id": 2
+    },
+    {
+      "customername": "",
+      "discountamount": 14,
+      "totalAmount": 126,
+      "taxamount": 5.6,
+      "billamount": 131.6,
+      "orderitems": [
+        {
+          "name": "Meals",
+          "price": 70,
+          "quantity": 1
+        },
+        {
+          "name": "upma",
+          "price": 70,
+          "quantity": 1
+        }
+      ],
+      "id": 3
+    },
+    {
+      "customername": "",
+      "discountamount": 10.5,
+      "totalAmount": 94.5,
+      "taxamount": 4.2,
+      "billamount": 98.7,
+      "orderitems": [
+        {
+          "name": "samosa",
+          "price": 40,
+          "quantity": 1
+        },
+        {
+          "name": "lemon tea",
+          "price": 40,
+          "quantity": 1
+        },
+        {
+          "name": "Wada",
+          "price": 25,
+          "quantity": 1
+        }
+      ],
+      "id": 4
+    }
   ]
 }

@@ -22,6 +22,8 @@ var clearAll = document.querySelector(".clear-btn");
 clearAll.addEventListener("click", clear);
 var n;
 
+var spanNumber=document.querySelector(".span-number");
+orderNumber();
 async function sideDisplayContent() {
 
    p=await fetch("http://localhost:3000/items")
@@ -150,7 +152,7 @@ async function getJson(){
                  <tr>`
 
    }
-   
+   orderNumber();
    
 }
 
@@ -187,5 +189,11 @@ currentBtn.addEventListener("click", currentpageDisplay)
                      orderItems.style.display="none";              
   }
   
+async function orderNumber(){
+   var s= await fetch("http://localhost:3000/orders")
+   gettingData=await s.json();
+  spanNumber.innerHTML=gettingData.length;
+
+}
 
   

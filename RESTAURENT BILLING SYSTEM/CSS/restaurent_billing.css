@@ -124,3 +124,7 @@ user_input{
 .expand{
     width:29%;
 }
+.span-number{
+    background-color:cornflowerblue;
+    color:rgb(165, 42, 69);
+}
