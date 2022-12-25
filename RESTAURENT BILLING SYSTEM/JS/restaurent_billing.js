@@ -171,14 +171,14 @@ currentBtn.addEventListener("click", currentpageDisplay)
    clearTablehead.style.display="none";
    var custumerName=document.querySelector(".input-field");
    viewSummeryList.innerHTML="";
-    
-
+   
    viewSummeryList.innerHTML+=`<h2>ORDER SUMMERY</h2>`
    for(n=0;n<gettingData[list].orderitems.length;n++){
-      viewSummeryList.innerHTML+=`<p>${gettingData[list].orderitems[n].name}=${gettingData[list].orderitems[n].price}*${gettingData[list].orderitems[n].quantity}</p>`
-       
+      var equalAmount=gettingData[list].orderitems[n].price * gettingData[list].orderitems[n].quantity;
+      viewSummeryList.innerHTML+=`<p>${gettingData[list].orderitems[n].name}=${gettingData[list].orderitems[n].price}*${gettingData[list].orderitems[n].quantity}=${equalAmount}</p>`
+      
       }
-
+     
    viewSummeryList.innerHTML+=
 
                   ` <p>DISCOUNT (10%)=${gettingData[list].discountamount}</p>
