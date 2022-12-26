@@ -1,0 +1,82 @@
+<html>
+<head>
+</head>
+<body>
+<script>
+  var  txt=0;
+   var arr=[4,7,65,4,5,67,78,45,35,63];
+   /*   for(var i=0;i<arr.length;i++){
+       txt+=arr[i];
+       
+    }  
+    document.write(txt);*/
+    
+/* for(var x in arr)   {
+    txt+=arr[x];
+ }
+    document.write(txt);*/
+    
+/* for(var x of arr)   {
+ txt+=x;
+ }
+ document.write(txt);*/
+ 
+  
+ /*   arr.forEach(myFunction);
+     document.write(txt);
+     function myFunction(value,index){
+     txt+=+index+":" +value+"<br>";
+    
+     }  */
+     
+     
+/*var output= arr.reduce(addsum,"");
+   
+ function addsum(acc,curr){
+     acc+=curr+"<br>";
+      
+     return acc;
+  
+   
+   
+ }
+   document.write(output);*/
+     
+  /* var output=  arr.map((x)=>x*2);
+    document.write(output);*/
+  /* var output=  arr.map(myFunction);
+   document.write(output);
+   function myFunction(value){
+  
+   return value*2;
+   
+   }   */
+   
+   
+    /*var output=arr.filter((x)=>x>50 );
+       document.write(output);  */
+       
+   /*   var output=arr.filter(myFunction)  ;
+          document.write(output);
+          function myFunction(x){
+          
+             return x>50;
+          }                 */
+ var output=  arr.reduce(function(acc,curr){
+          acc*=curr;
+          return acc;
+    },0) ;
+    document.write(output);  
+    
+ /*   var output=arr.reduce(myFunction,0);
+    function myFunction(acc,curr){
+         acc=acc+curr;
+          return acc;
+    }
+    document.write(output); */
+    
+        
+</script>
+</body>
+</html>
+

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       
+       class Car{
+           constructor(name, year){
+               this.name=name;
+               this.year=year;
+            
+           }
+           age(){
+              var date=new Date();
+               return date.getFullYear()-this.year;
+           }
+       }
+         
+       var myCar=new Car("BMW",2000);
+        console.log( myCar.age())
+//     class Car {
+//   constructor(name, year) {
+//     this.name = name;
+//     this.year = year;
+//   }
+// }
+
+// const myCar = new Car("Ford", 2014);
+// console.log(
+// myCar.name + " " + myCar.year)
+
+    </script>
+</body>
+</html>

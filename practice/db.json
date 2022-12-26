@@ -1,0 +1,37 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "name": "luck",
+      "locality": "jhisjhsd",
+      "area": "hyusdhusdh",
+      "id": 2
+    },
+    {
+      "name": "run",
+      "age": "78",
+      "id": 3
+    },
+    {
+      "name": "run",
+      "age": "78",
+      "id": 4
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "n
+    ame": "seetham naidu ",
+    "age": "24"
+  }
+}

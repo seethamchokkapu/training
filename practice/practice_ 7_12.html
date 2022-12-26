@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title></title>
+</head>
+<body>
+	<div id="message"></div>
+	<script>
+		var msg = document.getElementById("message");
+
+		function f1(){
+		   // return new Promise(function(resolve,reject){
+		      setTimeout(function(){
+		    msg.innerHTML+="this is first paragraph"+"<br>";
+		    msg.innerHTML+="this is second paragraph"+"<br>";},3000);
+		    //resolve();
+		    
+		}
+                function f2(){
+                      msg.innerHTML+="this is third paragraph"+"<br>";
+                        msg.innerHTML+="this is fourth paragraph"+"<br>";
+                        f1();
+                }
+                 f2();
+	</script>
+</body>
+</html>
+
+

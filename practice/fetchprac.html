@@ -1,0 +1,13 @@
+<html>
+   <head>
+   </head>
+   <body>
+     <script>
+          async function login(){
+                 let response=await fetch("https://forkify-api.herokuapp.com/api/search?q=pizza")
+                 console.log(response.json());
+          }
+           login();
+     </script>
+   </body>
+</html>

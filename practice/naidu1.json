@@ -1,0 +1,50 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "name": "naidu",
+        "age": "21",
+        "id": 2
+    },
+    {
+      "name": "seetham naidu ",
+      "age": "25",
+      "id": 3
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    },
+    {
+      "name": "akhil",
+      "age": "22",
+      "id": 2
+    },
+    {
+      "name": "Bharghav",
+      "age": "21",
+      "id": 3
+    },
+    {
+      "name": "lakshaman",
+      "age": "60",
+      "id": 4
+    },
+    {
+      "name": "ajay",
+      "age": "25",
+      "id": 5
+    }
+  ],
+  "profile": {
+    "name": "seetham naidu ",
+    "age": "24"
+  }
+}

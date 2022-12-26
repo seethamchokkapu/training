@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"> </p>
+<button id="demo1" onclick="removeHandler()" >click</button>
+<script>
+    var x=document.getElementById("demo1");
+    
+    x.addEventListener("click",myFunction);
+     
+        
+       function removeHandler() {
+          x.removeEventListener("mousemove", myFunction);
+           }
+           function myFunction(){
+           document.getElementById("demo").innerHTML=Math.random();
+           }
+</script>
+</body>
+</html>
+

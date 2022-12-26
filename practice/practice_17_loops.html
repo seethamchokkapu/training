@@ -1,0 +1,34 @@
+<html>
+<body>
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<script>
+  var txt="";
+ var fruits=["banana","apple","papaya","mango"];
+ fruits.forEach(myFunction);
+  document.getElementById("demo").innerHTML=txt;
+  function myFunction(value){
+  txt+=value+"<br>";
+  }
+ 
+ for(var x of fruits){
+    txt+=x+"<br>";
+ }
+  document.getElementById("demo1").innerHTML=txt;
+  
+ for(var x in fruits){
+   console.log(x,fruits[x]);
+ }
+ 
+ 
+ for(var x in fruits){
+    txt+=(fruits[x])+"<br>";
+ }
+ document.getElementById("demo2").innerHTML=txt;
+ 
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<html>
+<head>
+</head>
+<body>
+<script>
+      products=[{productname:"iphone",cost:50000},
+                {productname:"watch",cost:10000},
+                {productname:"TV",cost:55000},
+                {productname:"laptop",cost:100000},
+                {productname:"wallet",cost:1000},
+                {productname:"grainder",cost:5000},
+                {productname:"gas stove",cost:4000},
+                {productname:"washing machine",cost:20000},
+                {productname:"iron box",cost: 2000},
+                {productname:"fridge",cost:33000}
+                ]
+        var output= products.filter((x)=>x.cost<4000).map((x)=>x.productname);
+          console.log(output);
+</script>
+</body>
+</html>

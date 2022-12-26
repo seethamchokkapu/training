@@ -1,0 +1,19 @@
+<html>
+<head>
+</head>
+<body>
+<script>
+    fetch("http://localhost:3000/posts",{
+    method:'POST',
+    headers:{'content-type':"application/json"},
+    body:JSON.stringify({
+       name:"run",
+       age:"78"
+    }),
+    })
+    .then(x=>{return x.json()})
+    .then(y=>{console.log(y)})
+</script>
+</body>
+</html>
+

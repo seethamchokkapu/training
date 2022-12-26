@@ -1,0 +1,54 @@
+<html>
+<head>
+</head>
+<body>
+<script>
+       var txt="";
+       let person =[ {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"},
+                      {firstName:"sathya", lastName:"naidu", age:20, eyeColor:"white"},
+                       {firstName:"seetham", lastName:"see", age:30, eyeColor:"red"}];
+                    
+       /*   for(var x in person){
+              txt+=x+":"+person[x]+"<br>";
+          
+          }
+          document.write(txt); */
+     /*var p= person.filter((x)=>x.age>20).map((x)=>x.firstName);
+           
+          
+       console.log(p);    */
+     
+ /*  for(var x of person) {
+    txt+=x.firstName;
+   } 
+    console.log(txt);*/
+ 
+ 
+  /* person.forEach(myFunction);    
+  
+    function myFunction(value,index){
+        txt+=+index+":"+value.firstName+"<br>";
+    }
+    document.write(txt);*/
+    
+ /*  var output=person.map((x)=>x.firstName+x.lastName) ;
+      person.map((x)=>x.salary="12000");
+       document.write(output+"<br>");
+       console.log(person);
+   var x=person.map((x)=>x.lastName);
+       document.write(x);          */
+       
+  
+/*   var output= person.filter((x)=>x.age>20).map((x)=>x.firstName);
+    console.log(output);    */
+       
+ var output= person.reduce(function(acc,curr){
+     acc= curr.firstName;
+     console.log(acc);
+    return curr.firstName;
+  },0)   ;
+      document.write(output);       
+         
+</script>
+</body>
+</html>

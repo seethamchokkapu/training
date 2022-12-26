@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css">
+    <title>Javascript coding challenges - DOM</title>
+  </head>
+  <body>
+    <main>
+      <section class="player player--0 player--active">
+        <h2 class="name" id="name--0">Player 1</h2>
+        <p class="score" id="score--0">0</p>
+        <div class="current">
+          <p class="current-label">Current</p>
+          <p class="current-score" id="current--0">0</p>
+        </div>
+      </section>
+      <section class="player player--1">
+        <h2 class="name" id="name--1">Player 2</h2>
+        <p class="score" id="score--1">0</p>
+        <div class="current">
+          <p class="current-label">Current</p>
+          <p class="current-score" id="current--1">0</p>
+        </div>
+      </section>
+
+      <img src="dice-5.png" alt="Playing dice" class="dice" />
+      <button class="btn btn--new">🔄 New game</button>
+      <button class="btn btn--roll" onclick="diceroll()">🎲 Roll dice</button>
+      <button class="btn btn--hold" onclick="hold(),hold1()">📥 Hold</button>
+    </main>
+    <script>
+  var sum=0;
+  var totalsum=0;
+  var dicenumber=0;
+   dicenumber=Math.floor(Math.random()*6+1);
+     console.log(dicenumber);
+ function diceroll(){
+    
+   if(dicenumber<=6){
+        var x= document.querySelector('.dice');
+        x.setAttribute("src",`dice-${dicenumber}.png`);
+        document.querySelector("#current--0").innerHTML=+dicenumber;
+        sum+=dicenumber;
+        document.querySelector("#current--0").innerHTML=sum;
+   if(dicenumber==1){
+        document.querySelector("#current--0").innerHTML=0;
+        document.querySelector("#score--0").innerHTML=0;
+    
+  
+ 
+    }
+   
+    }
+  
+    }
+function hold(){
+   
+    
+    document.querySelector("#score--0").innerHTML=sum;
+    document.querySelector("#current--0").innerHTML=0;
+    player2();
+     
+    /*if(dicenumber==1){
+    document.querySelector("#score--0").innerHTML=0;
+    }
+    else{
+    document.querySelector("#score--0").innerHTML=sum;
+    document.querySelector("#current--0").innerHTML=0;
+    }*/
+ 
+ }
+function player2(){
+     
+   if(dicenumber<=6){
+        var x= document.querySelector('.dice');
+        x.setAttribute("src",`dice-${dicenumber}.png`);
+        document.querySelector("#current--1").innerHTML=+dicenumber;
+        sum+=dicenumber;
+        document.querySelector("#current--1").innerHTML=sum;
+   if(dicenumber==1){
+        document.querySelector("#current--1").innerHTML=0;
+        document.querySelector("#score--1").innerHTML=0;
+    
+  
+ 
+    }
+   
+    }
+}
+ 
+    </script>
+  </body>
+</html>
