@@ -1,0 +1,262 @@
+{
+  "items": [
+    {
+      "name": "Idle",
+      "price": 20,
+      "quantity": 1,
+      "id": 1
+    },
+    {
+      "name": "Chapathi",
+      "price": 30,
+      "quantity": 1,
+      "id": 2
+    },
+    {
+      "name": "Dosa",
+      "price": 30,
+      "quantity": 1,
+      "id": 3
+    },
+    {
+      "name": "Wada",
+      "price": 25,
+      "quantity": 1,
+      "id": 4
+    },
+    {
+      "name": "Puri",
+      "price": 30,
+      "quantity": 1,
+      "id": 5
+    },
+    {
+      "name": "VegFried Rice",
+      "price": 80,
+      "quantity": 1,
+      "id": 6
+    },
+    {
+      "name": "Nonveg Rice",
+      "price": 110,
+      "quantity": 1,
+      "id": 7
+    },
+    {
+      "name": "Veg Biryani",
+      "price": 90,
+      "quantity": 1,
+      "id": 8
+    },
+    {
+      "name": "NonVeg Biryani",
+      "price": 150,
+      "quantity": 1,
+      "id": 9
+    },
+    {
+      "name": "Meals",
+      "price": 70,
+      "quantity": 1,
+      "id": 10
+    },
+    {
+      "name": "samosa",
+      "price": 40,
+      "quantity": 1,
+      "id": 11
+    },
+    {
+      "name": "upma",
+      "price": 70,
+      "quantity": 1,
+      "id": 12
+    },
+    {
+      "name": "veg soup",
+      "price": 70,
+      "quantity": 1,
+      "id": 13
+    },
+    {
+      "name": "fruit juice",
+      "price": 80,
+      "quantity": 1,
+      "id": 14
+    },
+    {
+      "name": "tea",
+      "price": 20,
+      "quantity": 1,
+      "id": 15
+    },
+    {
+      "name": "lemon tea",
+      "price": 40,
+      "quantity": 1,
+      "id": 16
+    }
+  ],
+  "orders": [
+    {
+      "customername": "rakesh",
+      "discountamount": 38.5,
+      "totalAmount": 346.5,
+      "taxamount": 15.4,
+      "billamount": 361.9,
+      "orderitems": [
+        {
+          "name": "VegFried Rice",
+          "price": 80,
+          "quantity": 1
+        },
+        {
+          "name": "upma",
+          "price": 70,
+          "quantity": "4"
+        },
+        {
+          "name": "Wada",
+          "price": 25,
+          "quantity": 1
+        }
+      ],
+      "id": 1
+    },
+    {
+      "customername": "frtrttrt",
+      "discountamount": 21,
+      "totalAmount": 189,
+      "taxamount": 8.4,
+      "billamount": 197.4,
+      "orderitems": [
+        {
+          "name": "Veg Biryani",
+          "price": 90,
+          "quantity": 1
+        },
+        {
+          "name": "lemon tea",
+          "price": 40,
+          "quantity": 1
+        },
+        {
+          "name": "fruit juice",
+          "price": 80,
+          "quantity": 1
+        }
+      ],
+      "id": 2
+    },
+    {
+      "customername": "",
+      "discountamount": 16,
+      "totalAmount": 144,
+      "taxamount": 6.4,
+      "billamount": 150.4,
+      "orderitems": [
+        {
+          "name": "Dosa",
+          "price": 30,
+          "quantity": 1
+        },
+        {
+          "name": "Veg Biryani",
+          "price": 90,
+          "quantity": 1
+        },
+        {
+          "name": "lemon tea",
+          "price": 40,
+          "quantity": 1
+        }
+      ],
+      "id": 3
+    },
+    {
+      "customername": "",
+      "discountamount": 14.5,
+      "totalAmount": 130.5,
+      "taxamount": 5.8,
+      "billamount": 136.3,
+      "orderitems": [
+        {
+          "name": "Dosa",
+          "price": 30,
+          "quantity": 1
+        },
+        {
+          "name": "Veg Biryani",
+          "price": 90,
+          "quantity": 1
+        },
+        {
+          "name": "Wada",
+          "price": 25,
+          "quantity": 1
+        }
+      ],
+      "id": 4
+    },
+    {
+      "customername": "",
+      "discountamount": 64,
+      "totalAmount": 576,
+      "taxamount": 25.6,
+      "billamount": 601.6,
+      "orderitems": [
+        {
+          "name": "upma",
+          "price": 70,
+          "quantity": 1
+        },
+        {
+          "name": "Wada",
+          "price": 25,
+          "quantity": "4"
+        },
+        {
+          "name": "lemon tea",
+          "price": 40,
+          "quantity": 1
+        },
+        {
+          "name": "VegFried Rice",
+          "price": 80,
+          "quantity": "5"
+        },
+        {
+          "name": "Dosa",
+          "price": 30,
+          "quantity": 1
+        }
+      ],
+      "id": 5
+    },
+    {
+      "customername": "",
+      "discountamount": 18,
+      "totalAmount": 162,
+      "taxamount": 7.2,
+      "billamount": 169.2,
+      "orderitems": [
+        {
+          "name": "Chapathi",
+          "price": 30,
+          "quantity": 1
+        },
+        {
+          "name": "VegFried Rice",
+          "price": 80,
+          "quantity": 1
+        },
+        {
+          "name": "Meals",
+          "price": 70,
+          "quantity": 1
+        }
+      ],
+      "id": 6
+    }
+  ]
+}
