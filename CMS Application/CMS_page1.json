@@ -1,0 +1,47 @@
+    {
+    "services":[
+           { 
+                "image_url":"../ux-interface.png",
+                "title"    :"UX DESIGN",
+                "catagery" :"mobile app,website",
+                "id"       :1
+
+           },
+           { 
+                "image_url":"../gaming.png",
+                "title"    :"GAME DESIGN",
+                "catagery" :"mobile app,website",
+                "id"       :2
+
+           },
+           { 
+                "image_url":"../design.png",
+                "title"    :"GRAPHIC DESIGN",
+                "catagery" :"mobile app,website",
+                "id"       :3
+
+           },
+           { 
+                "image_url":"../web-design.png",
+                "title"    :"WEB DESIGN",
+                "catagery" :"mobile app,website",
+                "id"       :4
+
+           },
+           { 
+                "image_url":"../mobile-development.png",
+                "title"    :"APP DEVELOPMENT",
+                "catagery" :"mobile app,website",
+                "id"       :5
+
+           },
+           { 
+                "image_url":"../digital-marketing.png",
+                "title"    :"DIGITAL MARKETING",
+                "catagery" :"mobile app,website",
+                "id"       :6
+
+           }
+
+    ]
+}
