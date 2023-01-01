@@ -1,0 +1,45 @@
+#sidebar{
+       
+    height:1000px;
+    background-color:rgb(140, 137, 143);
+    
+}
+
+.services{
+font-size: 30px;
+margin: 100px 0px 0px 50px;
+
+}
+li{
+list-style: none;
+}
+#rightbar{
+   
+    
+    background-color: rgb(231, 231, 246);
+    
+}
+table {
+   
+   
+    border:2px solid black;
+    border-collapse: collapse;
+   
+}
+
+.add-services{
+    float:right;
+    padding:20px;
+    font-size: large;
+}
+   td{
+    border:2px solid black;
+   text-align: center;
+   
+}
+th{
+    border:2px solid black;
+    text-align: center;
+    color:brown;
+    
+}

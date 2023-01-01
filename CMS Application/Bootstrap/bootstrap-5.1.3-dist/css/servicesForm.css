@@ -1,0 +1,33 @@
+.form-details{
+    padding-top:50px;
+    display:none;
+    
+}
+.input-field1{
+    width:20%;
+    padding:10px;
+    margin-left: 20px;
+    border-radius: 10px;
+    font-size: large;
+}
+.input-field2{
+    width:20%;
+    padding:10px;
+    margin-left: 20px;
+    border-radius: 10px;
+    font-size: large;
+}
+
+.select-tag{
+    padding:10px;
+    margin-left: 20px;
+    border-radius: 10px;
+    font-size: large;
+}
+.submit-btn{
+    width:20%;
+    border-radius: 20px;
+    padding:10px;
+    margin-left: 20px;
+    font-size: large;
+}

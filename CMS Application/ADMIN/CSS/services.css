@@ -1,0 +1,101 @@
+
+*{
+    
+        margin:0;
+        padding:0;
+        box-sizing: border-box;  
+            
+ }
+.container{
+    background-color:cornflowerblue; 
+    width:100%;
+}
+.sidebar{
+    width:30%;
+    height:1000px;
+    background-color: blueviolet;
+    float:left;
+}
+.services{
+    text-decoration: none;
+    font-size: large;
+    padding:20px;
+    margin-top:10px;
+    width:100%;
+    border-radius: 20px;
+    color:chocolate;
+}
+.rightbar{
+    width:70%;
+    height:1000px;
+    background-color: rgb(149, 149, 153);
+    float:right;
+}
+table {
+    margin-top:80px;
+    width:100%;
+    border:2px solid black;
+    border-collapse: collapse;
+   
+}
+.right-sub-div{
+    display:none;
+}
+.add-services{
+    float:right;
+    padding:30px;
+    font-size: large;
+}
+   td{
+    border:2px solid black;
+   text-align: center;
+    padding:20px;
+}
+th{
+    border:2px solid black;
+    text-align: center;
+    color:brown;
+    /* padding: 10px;
+    width:20%; */
+}
+.form-details{
+    padding-top:50px;
+    background-color: aqua;
+    /* display:none; */
+    
+}
+.input-field1{
+    width:20%;
+    padding:10px;
+    margin-left: 20px;
+    border-radius: 10px;
+    font-size: large;
+}
+.input-field2{
+    width:20%;
+    padding:10px;
+    margin-left: 20px;
+    border-radius: 10px;
+    font-size: large;
+}
+.input-field3{
+    width:20%;
+    padding:10px;
+    margin-left: 20px;
+    border-radius: 10px;
+    font-size: large;
+}
+
+.select-tag{
+    padding:10px;
+    margin-left: 20px;
+    border-radius: 10px;
+    font-size: large;
+}
+.submit-btn{
+    width:20%;
+    border-radius: 20px;
+    padding:10px;
+    margin-left: 20px;
+    font-size: large;
+}
