@@ -1,0 +1,38 @@
+#sidebar{
+       
+    height:auto;
+    background-color:rgb(140, 137, 143);
+    
+}
+
+.services{
+font-size: 30px;
+margin: 100px 0px 0px 50px;
+
+}
+li{
+list-style: none;
+}
+#second-page{
+    background-color:rgb(175, 166, 166);
+}
+
+.our-services{
+  margin-top: 20px;  
+  color: #FF5300;
+
+
+}
+.what-we-do{
+    font-weight: 600;
+    font-size: 39px;
+    line-height: 59px;
+    color: #373737;
+    
+}
+#box{
+    background-color:white;
+    float:left;
+    border:1px solid rgb(218, 216, 216);
+    border-radius: 10px;  
+}

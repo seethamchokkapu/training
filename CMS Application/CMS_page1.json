@@ -1,0 +1,59 @@
+{
+  "services": [
+    {
+      "image_url": "../ux-interface.png",
+      "title": "UX DESIGN",
+      "subtitle": "mobile app,website",
+      "status": "active",
+      "discription": "Lorem ipsum dolor sit amet, consec tet ur adipiscing elit. Accumsan sed faucibu s faucibus augue. Cras ut.",
+      "id": 1
+    },
+    {
+      "image_url": "../gaming.png",
+      "title": "GAME DESIGN",
+      "subtitle": "mobile app,website",
+      "status": "active",
+      "discription": "Lorem ipsum dolor sit amet, consec tet ur adipiscing elit. Accumsan sed faucibu s faucibus augue. Cras ut.",
+      "id": 2
+    },
+    {
+      "image_url": "../design.png",
+      "title": "GRAPHIC DESIGN",
+      "subtitle": "mobile app,website",
+      "status": "active",
+      "discription": "Lorem ipsum dolor sit amet, consec tet ur adipiscing elit. Accumsan sed faucibu s faucibus augue. Cras ut.",
+      "id": 3
+    },
+    {
+      "image_url": "../web-design.png",
+      "title": "WEB DESIGN",
+      "subtitle": "mobile app,website",
+      "status": "active",
+      "discription": "Lorem ipsum dolor sit amet, consec tet ur adipiscing elit. Accumsan sed faucibu s faucibus augue. Cras ut.",
+      "id": 4
+    },
+    {
+      "image_url": "../mobile-development.png",
+      "title": "APP DEVELOPMENT",
+      "subtitle": "mobile app,website",
+      "status": "active",
+      "discription": "Lorem ipsum dolor sit amet, consec tet ur adipiscing elit. Accumsan sed faucibu s faucibus augue. Cras ut.",
+      "id": 5
+    },
+    {
+      "image_url": "../digital-marketing.png",
+      "title": "DIGITAL MARKETING",
+      "subtitle": "mobile app,website",
+      "status": "active",
+      "discription": "Lorem ipsum dolor sit amet, consec tet ur adipiscing elit. Accumsan sed faucibu s faucibus augue. Cras ut.",
+      "id": 6
+    },
+    {
+      "title": "lsldfmfd",
+      "subtitle": "gfgfhjjhjh",
+      "status": "active",
+      "discription": "hjhhhg",
+      "id": 7
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "services": [
+    {
+      "image_url": "../Images/ux-interface.png",
+      "title": "UX DESIGN",
+      "subtitle": "mobile app,website",
+      "status": "active",
+      "discription": "Lorem ipsum dolor sit amet, consec tet ur adipiscing elit. Accumsan sed faucibu s faucibus augue. Cras ut.",
+      "id": 1
+    },
+    {
+      "image_url": "../Images/gaming.png",
+      "title": "GAME DESIGN",
+      "subtitle": "mobile app,website",
+      "status": "active",
+      "discription": "Lorem ipsum dolor sit amet, consec tet ur adipiscing elit. Accumsan sed faucibu s faucibus augue. Cras ut.",
+      "id": 2
+    },
+    {
+      "image_url": "../Images/design.png",
+      "title": "GRAPHIC DESIGN",
+      "subtitle": "mobile app,website",
+      "status": "active",
+      "discription": "Lorem ipsum dolor sit amet, consec tet ur adipiscing elit. Accumsan sed faucibu s faucibus augue. Cras ut.",
+      "id": 3
+    },
+    {
+      "image_url": "../Images/web-design.png",
+      "title": "WEB DESIGN",
+      "subtitle": "mobile app,website",
+      "status": "active",
+      "discription": "Lorem ipsum dolor sit amet, consec tet ur adipiscing elit. Accumsan sed faucibu s faucibus augue. Cras ut.",
+      "id": 4
+    },
+    {
+      "image_url": "../Images/mobile-development.png",
+      "title": "APP DEVELOPMENT",
+      "subtitle": "mobile app,website",
+      "status": "active",
+      "discription": "Lorem ipsum dolor sit amet, consec tet ur adipiscing elit. Accumsan sed faucibu s faucibus augue. Cras ut.",
+      "id": 5
+    },
+    {
+      "image_url": "../Images/digital-marketing.png",
+      "title": "DIGITAL MARKETING",
+      "subtitle": "mobile app,website",
+      "status": "active",
+      "discription": "Lorem ipsum dolor sit amet, consec tet ur adipiscing elit. Accumsan sed faucibu s faucibus augue. Cras ut.",
+      "id": 6
+    }
+  ],
+
+ "testmonial":[
+     {
+      
+      "image_url":"../Images/Component 1.png",
+      "content"  :"Lorem ipsum dolor sit amet, consecte tur adipiscing elit. Ultrices blandit pelle ntesque nibh arcu elementum odio justo. Rhoncus.",
+      "client_image":"../Images/Image.png",
+      "name"  :"Philip Levin",
+      "category":"CEO/Creative IT",
+      "button_image":"../Images/double-quotes-l.png"
+      
+     },
+     {
+     
+      "image_url":"../Images/Component 1.png",
+      "content"  :"Lorem ipsum dolor sit amet, consecte tur adipiscing elit. Ultrices blandit pelle ntesque nibh arcu elementum odio justo. Rhoncus.",
+      "client_image":"../Images/Image (1).png",
+      "name"  :"Lincolin Lipshutz",
+      "category":"CEO/Creative IT",
+      "button_image":"../Images/double-quotes-l.png"
+      
+     },
+     {
+     
+      "image_url":"../Images/Component 1.png",
+      "content"  :"Lorem ipsum dolor sit amet, consecte tur adipiscing elit. Ultrices blandit pelle ntesque nibh arcu elementum odio justo. Rhoncus.",
+      "client_image":"../Images/Image (2).png",
+      "name"  :"Craig Sipron",
+      "category":"CEO/Creative IT",
+      "button_image":"../Images/double-quotes-l.png"
+    
+     }
+  
+  
+  
+  
+ ]
+}

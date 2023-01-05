@@ -1,0 +1,94 @@
+body{
+    background: #FFF7F4;
+}
+
+li{
+   
+    margin:50px 0px 0px 35px;
+    font-weight: 500;
+    
+}
+
+.border{
+   border: 1px solid rgb(7, 0, 0) ;
+   padding:8px;
+}
+.large-font{
+
+font-style: normal;
+font-weight: 700;
+font-size: 48.83px;
+color: #373737;
+padding-top:130px;
+
+}
+.small-font{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+
+line-height: 24px;
+color: #7B7B7B;
+}
+.btn-get-start-now{
+    background: #FF5300;
+}
+.frame-img{
+    padding-top: 50px;
+    
+}
+.font-colr{
+    color:#FF5300;
+}
+.box{
+    background-color:white;
+    width: 290px;
+}
+.second-page{
+    padding-top: 150px;
+    background: #E5E5E5;
+}
+.our-services-page{
+    margin-left: 56px;
+}
+.our-services{
+    color:#FF5300;
+    padding-top: 20px;
+}
+.number-id{
+float:right;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 64px;
+line-height: 73px;
+color: #EFEFEF;
+
+}
+.testmonial-page{
+    background: #FFF7F4;
+    margin-top: 100px;
+}
+.our-testmonial{
+    color:#FF5300;
+    padding-top: 130px;
+}
+.ceo{
+    color:#FF5300;
+    font-size: 15px;
+}
+.iteration{
+    margin-left: 48px;
+}
+.category{
+    font-size: 13px;
+}
+.left-icon{
+   position: relative;
+   top:195px;
+}
+.right-icon{
+    float: right;
+    position: relative;
+   top:195px;
+}

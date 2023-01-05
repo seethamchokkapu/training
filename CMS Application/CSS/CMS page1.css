@@ -1,0 +1,104 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+    
+}   
+body{
+   
+    font-family: 'Poppins', sans-serif;
+}
+
+    
+
+.container{
+    width: 1440px;
+    height: 850px; 
+    margin:auto;  
+   
+}
+.header{
+    background-color: #FFF7F4;
+    width: 1178px;
+    height: 50px;
+    margin-left: 125px;
+    margin-top: 30px;
+   
+}
+ ul li{
+   display: inline-block;
+   padding-left: 50px;
+}
+.digiency{
+ 
+ margin-top:8px;
+ padding-right:60px;
+}  
+.headings{
+    position:relative;
+    bottom:40px;
+    padding-left: 300px;
+}
+.home{
+    color:#FF5300;
+}
+.border{
+    border:1px solid black;
+    padding: 5px;
+    margin-left: 30px;
+   
+}
+.second-page{
+    background-color:white;
+}
+
+.our-services{
+  margin-top: 20px;  
+color: #FF5300;
+text-underline-position: under left;
+
+}
+.what-we-do{
+    font-weight: 600;
+    font-size: 39px;
+    line-height: 59px;
+    color: #373737;
+    
+}
+.box{
+    background-color:white;
+    width: 350px;
+    height: 300px;
+    margin-left:30px;
+    margin-top:30px;
+    float:left;
+    padding:30px;
+    border:1px solid rgb(218, 216, 216);
+    border-radius: 10px;
+}
+.total{
+    width:1200px;
+    margin:auto;
+    background-color: white;
+}
+#color-gray{
+    color:#7B7B7B;
+    margin-top: 4px;
+}
+.clearfix::after{
+    content:"";
+    display:table;
+    clear:both;
+}
+.number-img{
+    float:right;
+    
+    font-weight: 600;
+font-size: 64px;
+line-height: 73px;
+/* identical to box height, or 114% */
+
+
+color: #EFEFEF;
+}
