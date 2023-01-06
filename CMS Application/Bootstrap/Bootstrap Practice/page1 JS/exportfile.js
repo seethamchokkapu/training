@@ -39,3 +39,30 @@
     })
     testIterationData.innerHTML=testupdateusers.join("");
   }
+
+
+
+  export function recentProjectUsers(ourRecentProjectArray){
+    let recentIterationData=document.querySelector(".recent-project");
+    let recentupdateusers=ourRecentProjectArray.map(recentuser=>{
+      return `<div class="col-4">
+      <img src="${recentuser.image_url}">
+         
+    </div>`
+    })
+    recentIterationData.innerHTML=recentupdateusers.join("");
+  }
+
+
+  export function blogUsers(blogArray){
+      let blogIterateData=document.querySelector(".blog-data");
+      let blogupdateusers=blogArray.map(bloguser=>{
+        return `<div class="col-3 blog-margin">
+        <img src="${bloguser.image_url}">
+        <h6>${bloguser.heading}</h6>
+        <p>${bloguser.information}</p>
+      </div>`
+      })
+
+      blogIterateData.innerHTML=blogupdateusers.join("");
+  }

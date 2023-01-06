@@ -85,5 +85,54 @@
   
   
   
- ]
+ ],
+ "ourproject":[
+      {
+        "image_url":"../Images/Image (3).png"
+      },
+      {
+        "image_url":"../Images/Image (4).png"
+      },
+      {
+        "image_url":"../Images/Image (5).png"
+      },
+      {
+        "image_url":"../Images/Image (6).png"
+      },
+      {
+        "image_url":"../Images/Image (7).png"
+      },
+      {
+        "image_url":"../Images/Image (8).png"
+      },
+      {
+        "image_url":"../Images/Image (9).png"
+      },
+      {
+        "image_url":"../Images/Image (10).png"
+      },
+      {
+        "image_url":"../Images/Image (11).png"
+      }
+      
+ ],
+ "blog":[
+      {
+        "image_url":"../Images/Image  21.png",
+        "heading"  :"35 Stellar Graphic Design Blogs to Keep YouEducated and Inspired",
+        "information":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget nunc, sed sed sed. Sit integer at dui at non ipsum tellus ac. Est."
+      },
+      {
+        "image_url":"../Images/Image 22.png",
+        "heading"  :"Ridiculously powerful 2021 iPad Pro may drop this month",
+        "information":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget nunc, sed sed sed. Sit integer at dui at non ipsum tellus ac. Est."
+      },
+      {
+        "image_url":"../Images/Image 23.png",
+        "heading"  :"Memphis Design: the defining look of the 1980s",
+        "information":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget nunc, sed sed sed. Sit integer at dui at non ipsum tellus ac. Est."
+      }
+     
+
+    ]
 }
