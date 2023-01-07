@@ -104,3 +104,15 @@ color: #EFEFEF;
 .blog-margin{
     margin-left: 70px;
 }
+.btn-readmore{
+    background-color: #FF5300;
+}
+.font-color{
+    color:#FF5300
+}
+.capacities-row{
+    padding-top: 65px;
+}
+.capacities-box{
+    background-color: #FF5300;
+}

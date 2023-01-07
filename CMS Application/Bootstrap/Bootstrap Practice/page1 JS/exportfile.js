@@ -61,6 +61,7 @@
         <img src="${bloguser.image_url}">
         <h6>${bloguser.heading}</h6>
         <p>${bloguser.information}</p>
+        <button class="btn-readmore">Read More</button>
       </div>`
       })
 

@@ -7,9 +7,12 @@ var  users=[];
  import {user} from "../JS/config.js";
  import { apiGet } from "../JS/services/apiService.js"
 async function fetchData(){
-    
-   let users=await apiGet(`${user}?_start=5&_limit=2`);
-   renderusers(await users);
+    let params={
+      _start:5,_limit:2
+    }
+   let users=await apiGet(user,params);
+   console.log(users);
+   renderusers(users);
 
 }
 
