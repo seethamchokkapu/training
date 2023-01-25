@@ -1,0 +1,11 @@
+li{
+    display:inline;
+    list-style: none;
+}
+li a{
+    padding:120px;
+    margin-left: 50px;
+}
+#empty-div{
+    text-align: center;
+}
