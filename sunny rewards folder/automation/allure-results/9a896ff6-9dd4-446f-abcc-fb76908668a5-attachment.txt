@@ -1,0 +1,52 @@
+{
+  availableTasks: [
+    {
+      task: [Object],
+      taskReward: [Object],
+      taskDetail: [Object],
+      termsOfService: [Object]
+    },
+    {
+      task: [Object],
+      taskReward: [Object],
+      taskDetail: [Object],
+      termsOfService: [Object]
+    },
+    {
+      task: [Object],
+      taskReward: [Object],
+      taskDetail: [Object],
+      termsOfService: [Object]
+    },
+    {
+      task: [Object],
+      taskReward: [Object],
+      taskDetail: [Object],
+      termsOfService: [Object]
+    },
+    {
+      task: [Object],
+      taskReward: [Object],
+      taskDetail: [Object],
+      termsOfService: [Object]
+    },
+    {
+      task: [Object],
+      taskReward: [Object],
+      taskDetail: [Object],
+      termsOfService: [Object]
+    },
+    {
+      task: [Object],
+      taskReward: [Object],
+      taskDetail: [Object],
+      termsOfService: [Object]
+    }
+  ],
+  pendingTasks: [],
+  completedTasks: [],
+  errorCode: null,
+  errorMessage: null,
+  errorDescription: null,
+  errorDescriptionType: null
+}

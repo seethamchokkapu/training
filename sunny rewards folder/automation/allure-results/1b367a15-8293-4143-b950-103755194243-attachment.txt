@@ -1,0 +1,15 @@
+{
+  transactionId: 7,
+  walletId: 5,
+  transactionCode: 'txn-bb96c9a49a21469b97eada16817336fa',
+  transactionType: 'S',
+  previousBalance: 200,
+  transactionAmount: 50,
+  balance: 150,
+  prevWalletTxnCode: '5:txn-0a85d4280f9041b8aa9bb45990b260ef',
+  createTs: '2023-06-04T17:39:57.312593',
+  updateTs: '0001-01-01T00:00:00',
+  createUser: 'per-915325069cdb42c783dd4601e1d27704',
+  updateUser: null,
+  deleteNbr: 0
+}

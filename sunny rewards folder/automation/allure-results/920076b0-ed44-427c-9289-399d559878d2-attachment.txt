@@ -1,0 +1,8 @@
+Locator@(//span[text()="EY"])[1]
+//div[@class="part-two"][i+1]}]
+Locator@(//span[text()="EY"])[1]
+//div[@class="part-two"][i+1]}]
+Locator@(//span[text()="EY"])[1]
+//div[@class="part-two"][i+1]}]
+Locator@(//span[text()="EY"])[1]
+//div[@class="part-two"][i+1]}]

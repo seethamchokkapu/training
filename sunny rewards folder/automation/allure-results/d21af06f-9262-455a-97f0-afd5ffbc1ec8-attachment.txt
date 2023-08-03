@@ -1,0 +1,65 @@
+{
+  consumerPersonDetail: {
+    firstName: 'Kailey',
+    lastName: 'Joseph',
+    memberSince: '2023-06-02T17:44:54.013418'
+  },
+  consumerWalletDetail: {
+    wallets: [ [Object] ],
+    recentTransactions: [ [Object], [Object], [Object] ],
+    taskRewardDetail: {
+      'trw-8a154edc602c49efb210d67a7bfe22b4': [Array],
+      'trw-dabc84b9ec21436dacc5469cdd04d771': [Array]
+    }
+  },
+  availableTasks: [
+    {
+      task: [Object],
+      taskReward: [Object],
+      taskDetail: [Object],
+      termsOfService: [Object]
+    },
+    {
+      task: [Object],
+      taskReward: [Object],
+      taskDetail: [Object],
+      termsOfService: [Object]
+    },
+    {
+      task: [Object],
+      taskReward: [Object],
+      taskDetail: [Object],
+      termsOfService: [Object]
+    },
+    {
+      task: [Object],
+      taskReward: [Object],
+      taskDetail: [Object],
+      termsOfService: [Object]
+    },
+    {
+      task: [Object],
+      taskReward: [Object],
+      taskDetail: [Object],
+      termsOfService: [Object]
+    }
+  ],
+  pendingTasks: [
+    {
+      task: [Object],
+      taskReward: [Object],
+      taskDetail: [Object],
+      termsOfService: [Object]
+    },
+    {
+      task: [Object],
+      taskReward: [Object],
+      taskDetail: [Object],
+      termsOfService: [Object]
+    }
+  ],
+  errorCode: null,
+  errorMessage: null,
+  errorDescription: null,
+  errorDescriptionType: null
+}

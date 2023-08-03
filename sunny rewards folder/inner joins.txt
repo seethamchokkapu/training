@@ -1,0 +1,628 @@
+************************************************* wallet schema ******************************************************************
+CREATE SCHEMA IF NOT EXISTS wallet;
+
+create table wallet.consumer_wallet
+(
+consumer_wallet_id bigint not null primary key,
+wallet_id bigint not null,
+tenant_code varchar(50) not null,
+consumer_code varchar(50) not null,
+consumer_role char(1) not null,
+earn_maximum decimal not null,
+create_ts timestamp not null,
+update_ts timestamp,
+create_user varchar(40) not null,
+update_user varchar(40),
+delete_nbr bigint,
+
+constraint fk_wallet_id
+FOREIGN KEY(wallet_id) 
+REFERENCES wallet.wallet(wallet_id)
+);
+
+create unique index wallet_id_consumer_code_delete_nbr on wallet.consumer_wallet(wallet_id,consumer_code,delete_nbr)
+
+-----------------------------------------------------------------------------------------------------------------------
+
+CREATE SCHEMA IF NOT EXISTS wallet;
+
+create table wallet.transaction
+(
+transaction_id bigint not null primary key,
+wallet_id bigint not null,
+transaction_code varchar(50) not null,
+transaction_type varchar(1) not null,
+previous_balance decimal not null,
+transaction_amount decimal not null,
+balance decimal not null,
+prev_wallet_txn_code varchar(100) unique not null,
+create_ts timestamp not null,
+update_ts timestamp,
+create_user varchar(40) not null,
+update_user varchar(40),
+delete_nbr bigint,
+constraint fk_wallet_id
+FOREIGN KEY(wallet_id) 
+REFERENCES wallet.wallet(wallet_id)
+);
+
+create unique index transaction_code_transaction_type_delete_nbr on wallet.transaction(transaction_code,transaction_type,delete_nbr);
+create unique index prev_wallet_txn_code_delete_nbr on wallet.transaction(prev_wallet_txn_code,delete_nbr);
+
+-----------------------------------------------------------------------------------------------------------------
+
+CREATE SCHEMA IF NOT EXISTS wallet;
+
+create table wallet.transaction_detail
+(
+transaction_detail_id bigint not null primary key,
+transaction_id bigint not null,
+transaction_detail_type varchar(20) not null,
+consumer_code varchar(50),
+task_code varchar(50),
+notes varchar(1024),
+redemption_ref varchar(80),
+redemption_item_description varchar(1024),
+create_ts timestamp not null,
+update_ts timestamp,
+create_user varchar(40) not null,
+update_user varchar(40),
+delete_nbr bigint,
+constraint fk_transaction_id
+FOREIGN KEY(transaction_id) 
+REFERENCES wallet.transaction(transaction_id)
+);
+
+create unique index transaction_id_delete_nbr on wallet.transaction_detail(transaction_id,delete_nbr)
+
+-----------------------------------------------------------------------------------------------------------------
+
+CREATE SCHEMA IF NOT EXISTS wallet;
+
+create table wallet.wallet
+(
+wallet_id bigint not null primary key,
+wallet_type_id bigint not null,	
+customer_code varchar(50) not null,
+sponsor_code varchar(50),
+tenant_code varchar(50),
+wallet_code varchar(50) unique not null,
+master_wallet bit(1) not null default '0',
+wallet_name varchar(80),
+active bit(1) not null default '0',
+active_start_ts timestamp,
+active_end_ts timestamp,
+balance decimal not null,
+earn_maximum decimal not null,
+create_ts timestamp not null,
+update_ts timestamp,
+create_user varchar(40) not null,
+update_user varchar(40),
+delete_nbr bigint,
+
+constraint fk_wallet_type_id
+FOREIGN KEY(wallet_type_id) 
+REFERENCES wallet.wallet_type(wallet_type_id)
+);
+
+create unique index idx_wallet_code_delete_nbr on wallet.wallet(wallet_code,delete_nbr)
+
+----------------------------------------------------------------------------------------------------
+
+CREATE SCHEMA IF NOT EXISTS wallet;
+
+create table wallet.wallet_type
+(
+wallet_type_id bigint not null primary key,
+wallet_type_code varchar(50) unique not null,
+wallet_type_name varchar(80) not null,
+create_ts timestamp not null,
+update_ts timestamp,
+create_user varchar(40) not null,
+update_user varchar(40),
+delete_nbr bigint
+);
+
+create unique index idx_wallet_type_code_delete_nbr on wallet.wallet_type(wallet_type_code,delete_nbr)
+
+***********************************************************************************************************************
+
+select * from wallet.wallet_type;
+select * from wallet.wallet;
+
+
+-- *********************************** Queries **************************************************
+
+ -- *************************** inner join between wallet & wallet_type ***************************
+
+select wallet.wallet.wallet_id,
+       wallet.wallet_type.wallet_type_code,
+	   wallet.wallet_type.wallet_type_name,
+       wallet.wallet.customer_code,
+	   wallet.wallet.sponsor_code,
+	   wallet.wallet.tenant_code
+   from wallet.wallet_type inner join wallet.wallet on wallet.wallet_type.wallet_type_id=wallet.wallet.wallet_type_id
+
+--***********************wallet & consumer_wallet ****************************                
+
+
+select wallet.wallet.wallet_type_id,
+       wallet.wallet.customer_code,
+	   wallet.consumer_wallet.tenant_code,
+	   wallet.consumer_wallet.consumer_code
+            from wallet.wallet inner join wallet.consumer_wallet on
+                     wallet.wallet.wallet_id=wallet.consumer_wallet.wallet_id;
+
+
+--***********************wallet & transaction ********************************
+				 
+select wallet.wallet.wallet_id, 
+       wallet.wallet.customer_code,
+       wallet.wallet.sponsor_code,
+	   wallet.wallet.tenant_code,
+	   wallet.transaction.transaction_code,
+	   wallet.transaction.transaction_type,
+	   wallet.transaction.previous_balance,
+	   wallet.transaction.transaction_amount  
+   from wallet.wallet inner join wallet.transaction on wallet.wallet.wallet_id=wallet.transaction.wallet_id
+   
+   
+   ***********************************transaction & transaction_detail *************************************
+   
+   
+   select wallet.transaction.wallet_id,
+          wallet.transaction.transaction_code,
+		  wallet.transaction.transaction_type,
+		  wallet.transaction_detail.transaction_detail_type,
+		  wallet.transaction_detail.consumer_code
+		    from wallet.transaction inner join wallet.transaction_detail on 
+			        wallet.transaction.transaction_id=wallet.transaction_detail.transaction_id
+
+
+************************************* tenant schema ************************************************
+******************************************************************************************************
+
+  
+  ***************************** customer table ******************************************
+  ***************************************************************************************
+  
+create table tenant.customer
+                        (
+                              customer_id bigint not null primary key, 
+                              customer_code char(50) unique not null,
+                               customer_name char(80) not null,  
+                              customer_description char(1024) not null, 
+                             create_ts timestamp not null,
+                            update_ts timestamp,
+                             create_user varchar(40) not null,
+                              update_user varchar(40),
+                               delete_nbr bigint not null);
+							   
+  insert into tenant.customer values (0003,
+									 'sevenhills_health_insurance_code_one',
+									 'sevenhills health insurance',
+									  'we provide health insurance policies',
+									 now(),
+									 now(),
+									 'null',
+									 'null',
+									 67890);
+  update tenant.customer set customer_name = 'Naidu software solutions' where customer_id=0001;
+  delete from tenant.customer where  customer_id=0003;
+  
+  select * from tenant.customer 
+  
+  
+  ***************************** sponsor table ******************************************
+  **************************************************************************************
+  
+create table tenant.sponsor
+                        (
+                            sponsor_id bigint not null primary key, 
+							 customer_id bigint not null,
+                             sponsor_code char(50) unique not null,
+                             sponsor_name char(80) not null,  
+                              sponsor_description char(1024) not null, 
+                              create_ts timestamp not null,
+                              update_ts timestamp,
+                              create_user varchar(40) not null,
+                              update_user varchar(40),
+                              delete_nbr bigint not null);
+							   
+  insert into tenant.sponsor values (0003,
+									 0003,
+									 'Hexaware_software_code_two',
+									 'Hexaware software solutions',
+									  'we provide health insurance policies for our employees',
+									 now(),
+									 now(),
+									  'null',
+									 'null',
+									 98765);
+		
+		update tenant.sponsor set sponsor_description = 'we assure our customers healthy and prosporous lifestyle ' where sponsor_id=0002;
+		 delete from tenant.sponsor where  sponsor_id=0003;
+  
+  select * from tenant.sponsor 
+  
+   
+  ***************************** tenant table ******************************************
+  *************************************************************************************
+  
+create table tenant.tenant
+                        (
+                              tenant_id bigint not null primary key,
+							  sponsor_id bigint not null,
+                              tenant_code char(50) unique not null,
+                              plan_year int not null,
+							  period_start_ts timestamp,
+							  period_end_ts timestamp,
+                              create_ts timestamp not null,
+                              update_ts timestamp,
+                              create_user varchar(40) not null,
+                              update_user varchar(40),
+                              delete_nbr bigint not null);
+							   
+  insert into tenant.tenant values (0003,
+									 0003,
+									 'tenant_code_three',
+									  1,
+									 now(),
+									 now(),
+									 now(),
+									 now(),
+									 'null',
+									 'null',
+									 7483);
+  update tenant.tenant set delete_nbr = 1729 where tenant_id=0002;
+   delete from tenant.tenant where  tenant_id=0003;
+  
+  select * from tenant.tenant 
+
+create table task_type(
+  task_type_id bigint not null primary key,
+  task_type_name char (80) not null,				 
+  task_type_description char (1024) not null,                    
+  create_ts timestamp not null,
+  update_ts timestamp,
+  create_user varchar(40) not null,
+  update_user varchar(40),
+  delete_nbr bigint
+)
+select * from task.task_type
+
+ insert into task.task_type values (0001,
+				 'testing',
+				 'we are do testing an application',
+				 now(),
+				 now(),
+				'null',
+				'null',
+				 12345   
+				);
+								   
+
+##############################################################################  TASK SCHEMA ##########################################################################
+
+********************************task_type*************************
+*******************************************************************
+
+create table task.task_type(
+       task_type_id bigint not null primary key, 
+                              task_type_name char(80) not null,  
+                             task_type_description char(1024) not null, 
+                             create_ts timestamp not null,
+                             update_ts timestamp,
+                             create_user varchar(40) not null,
+                              update_user varchar(40),
+                               delete_nbr bigint not null
+)
+  insert into task.task_type values 
+    (0003,                               
+     'Manual Testing',                           
+     'we are doing Manual Testing on an application',
+    now(),
+    now(),
+    'null',
+    'null',
+    67890);
+	
+update task.task_type set task_type_name='regression testing' where task_type_id=1;
+delete from task.task_type where task_type_id=3;
+select * from task.task_type;
+
+
+***********************************task*********************************
+***********************************************************************
+
+create table task.task(
+    task_id bigint not null primary key, 
+                              task_type_id bigint not null, 
+                               task_code char(50) not null,
+                               task_name char(80) not null,
+                               task_description char(1024) not null, 
+                               self_report bit not null ,
+                               confirm_report bit not null ,
+                             create_ts timestamp not null,
+                             update_ts timestamp,
+                             create_user varchar(40) not null,
+                              update_user varchar(40),
+                               delete_nbr bigint not null
+)
+   insert into task.task values(003,
+                         0003,
+                         'task_code_three',
+                         'task_table_three',
+                         'we are working on task table',
+                         '0',
+                         '0',
+                         now(),
+                        now(),
+                        'null',
+                        'null',
+                        67890
+                         );
+update task.task set task_name='task_table_two',task_code='task_code_two' where task_type_id=2;
+delete from task.task where task_id=3;
+select * from task.task;
+
+
+***********************************consumer_task*********************************
+***********************************************************************
+
+create table task.consumer_task(
+                             consumer_task_id bigint not null primary key, 
+                              task_id bigint not null, 
+                               tenant_code char(50) not null,
+                               consumer_code char(50) not null,
+                               task_status char(20) not null,
+                               progress int not null,
+                               notes char(1024),
+                               task_start_ts timestamp,
+                               task_complete_ts timestamp,
+                             create_ts timestamp not null,
+                             update_ts timestamp,
+                             create_user varchar(40) not null,
+                              update_user varchar(40),
+                               delete_nbr bigint not null
+
+ 
+
+);
+
+insert into task.consumer_task values(02,
+                                      002,
+                                      'tenant_code_two',
+                                     'consumer_code_two',
+                                     'task_status_two',
+                                       1,
+                                     'we are working on consumer_task table',
+                                     now(),
+                                     now(),
+                                     now(),
+                                    now(),
+                                    'null',
+                                    'null',
+                                    09876
+                                     );
+update task.consumer_task set progress=2 where task_id=2;
+delete from task.consumer_task where consumer_task_id=3;
+select * from task.consumer_task;
+
+
+***********************************reward_type*********************************
+***********************************************************************
+
+
+create table task.reward_type(
+     reward_type_id bigint not null primary key, 
+                              reward_type_name char(80) not null,
+                               reward_type_description char(1024),
+                             create_ts timestamp not null,
+                             update_ts timestamp,
+                             create_user varchar(40) not null,
+                              update_user varchar(40),
+                               delete_nbr bigint not null
+)
+
+ 
+
+insert into task.reward_type values(
+    00002,
+    'pizza reward_two',
+    'you have got a reward',
+     now(),
+    now(),
+    'null',
+    'null',
+    54321
+);
+
+ 
+
+update task.reward_type set   reward_type_description='please scatch the card' where reward_type_id=1;
+delete from task.reward_type where reward_type_id=1;
+select * from task.reward_type;
+
+
+***********************************task_reward*********************************
+*******************************************************************************
+
+
+create table task.task_reward(
+        task_reward_id bigint not null primary key,
+                             task_id bigint not null,
+                             reward_type_id bigint not null, 
+                               tenant_code char(50) not null,
+                               task_reward_code char(50) unique not null,
+                               reward char(1024) not null,
+                               min_task_duration int,
+                               max_task_duration int,
+                               expiry timestamp,
+                               priority int not null,
+                             create_ts timestamp not null,
+                             update_ts timestamp,
+                             create_user varchar(40) not null,
+                              update_user varchar(40),
+                               delete_nbr bigint not null
+);
+
+ 
+
+insert into task.task_reward values (
+    02,
+    002,
+  00002,
+'tenant_code_two',
+    'task_reward_code_two',
+    'you got a reward',
+    5,
+    2,
+    now(),
+    5,
+     now(),
+    now(),
+    'null',
+    'null',
+    12345
+);
+
+ 
+
+update task.task_reward set reward='scratch the reward card' where task_reward_id=2;
+delete from task.task_reward where task_id=3;
+select * from task.task_reward;
+
+ 
+ 
+ [14:57] Seetham Naidu Chokkapu
+
+***************************terms_of_service*************************
+
+****************************************************************
+
+ 
+
+  create table task.terms_of_service(
+
+      terms_of_service_id bigint not null primary key, 
+
+                               terms_of_service_text char(255) not null,
+
+                               language_code char(5) not null,
+
+                             create_ts timestamp not null,
+
+                             update_ts timestamp,
+
+                             create_user varchar(40) not null,
+
+                              update_user varchar(40),
+
+                               delete_nbr bigint not null
+
+
+  );
+
+
+
+  insert into task.terms_of_service values(
+
+  3,
+
+  'terms_of_service_text_two',
+
+   'tsk03',
+
+      now(),
+
+    now(),
+
+    'null',
+
+    'null',
+
+    09876 
+
+  );
+
+
+  update task.terms_of_service set   terms_of_service_text=' terms_of_service_text_three' where terms_of_service_id=3; 
+
+  delete from task.terms_of_service where terms_of_service_id=3;
+
+  select * from task.terms_of_service;
+
+
+
+
+  ***************************task_detail*************************
+
+****************************************************************
+
+ 
+
+  create table task.task_detail(
+
+
+    task_detail_id bigint not null primary key,
+
+                             task_id bigint not null,
+
+                              language_code char(5) not null, 
+
+                               task_header char(255) not null,
+
+                               task_description char(255) not null,
+
+                               terms_of_service_id bigint not null,
+
+                              task_cta_button_text char(80) not null,  
+
+                             create_ts timestamp not null,
+
+                             update_ts timestamp,
+
+                             create_user varchar(40) not null,
+
+                              update_user varchar(40),
+
+                               delete_nbr bigint not null
+
+  )
+
+
+  insert into task.task_detail values(
+
+     000002,
+
+      002,
+
+     'tsk02',
+
+     'This is header of the task_detail table',
+
+     'we are working on the task_detail table',
+
+      1,
+
+     'Enroll now',
+
+     now(),
+
+     now(),
+
+    'null',
+
+    'null',
+
+     54321
+
+  );
+
+
+  update task.task_detail set  terms_of_service_id=2 where task_detail_id=2;
+
+  delete from task.task_detail where task_detail_id=3;
+
+select * from task.task_detail;

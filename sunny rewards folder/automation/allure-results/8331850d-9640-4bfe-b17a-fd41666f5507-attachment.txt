@@ -1,0 +1,75 @@
+{
+  consumerPersonDetail: {
+    firstName: 'Kailey',
+    lastName: 'Joseph',
+    memberSince: '2023-06-02T17:44:54.013418'
+  },
+  consumerWalletDetail: {
+    wallets: [ [Object] ],
+    recentTransactions: [ [Object], [Object], [Object] ],
+    taskRewardDetail: {
+      'trw-8a154edc602c49efb210d67a7bfe22b4': [Array],
+      'trw-dabc84b9ec21436dacc5469cdd04d771': [Array]
+    }
+  },
+  availableTasks: [
+    {
+      task: [Object],
+      taskReward: [Object],
+      taskDetail: [Object],
+      termsOfService: [Object]
+    },
+    {
+      task: [Object],
+      taskReward: [Object],
+      taskDetail: [Object],
+      termsOfService: [Object]
+    },
+    {
+      task: [Object],
+      taskReward: [Object],
+      taskDetail: [Object],
+      termsOfService: [Object]
+    },
+    {
+      task: [Object],
+      taskReward: [Object],
+      taskDetail: [Object],
+      termsOfService: [Object]
+    },
+    {
+      task: [Object],
+      taskReward: [Object],
+      taskDetail: [Object],
+      termsOfService: [Object]
+    },
+    {
+      task: [Object],
+      taskReward: [Object],
+      taskDetail: [Object],
+      termsOfService: [Object]
+    }
+  ],
+  pendingTasks: [
+    {
+      consumerTaskId: 1,
+      taskId: 4,
+      tenantCode: 'ten-ecada21e57154928a2bb959e8365b8b4',
+      consumerCode: 'cmr-c69905fc68ce4f36851f877bae38f22e',
+      taskStatus: 'IN_PROGRESS',
+      progress: 0,
+      notes: 'ok',
+      taskstartTs: '2023-06-20T04:08:45.676179',
+      taskCompleteTs: '0001-01-01T00:00:00',
+      createTs: '2023-06-20T04:08:45.676179',
+      updateTs: '0001-01-01T00:00:00',
+      createUser: 'per-915325069cdb42c783dd4601e1d27704',
+      updateUser: null,
+      deleteNbr: 0
+    }
+  ],
+  errorCode: null,
+  errorMessage: null,
+  errorDescription: null,
+  errorDescriptionType: null
+}

@@ -1,0 +1,120 @@
+{
+  task: {
+    taskId: 10,
+    taskTypeId: 1,
+    taskCode: 'tsk-adce279ecd7a426b8822fec328b9b0ac',
+    taskName: 'Enroll in Telehealth program',
+    selfReport: false,
+    confirmReport: false,
+    taskHeader: null,
+    taskDescription: null,
+    termsOfService: null,
+    createTs: '2023-06-15T01:41:53.45795',
+    updateTs: '2023-06-15T01:41:53.45795',
+    createUser: 'per-915325069cdb42c783dd4601e1d27704',
+    updateUser: null,
+    deleteNbr: 0
+  },
+  taskReward: {
+    taskId: 10,
+    taskRewardId: 9,
+    rewardTypeId: 1,
+    tenantCode: 'ten-ecada21e57154928a2bb959e8365b8b4',
+    taskRewardCode: 'trw-9ba706ea4f584ca5947f3b4a98d13eba',
+    reward: '{ "rewardAmount": "25"}',
+    priority: 4,
+    expiry: '0001-01-01T00:00:00',
+    minTaskDuration: 0,
+    maxTaskDuration: 0,
+    createTs: '2023-06-15T01:44:33.6346',
+    updateTs: '2023-06-15T01:44:33.6346',
+    createUser: 'per-915325069cdb42c783dd4601e1d27704',
+    updateUser: null,
+    deleteNbr: 0
+  },
+  taskDetail: {
+    taskId: 10,
+    taskDetailId: 11,
+    termsOfServiceId: 1,
+    taskHeader: 'Enroll in Telehealth program',
+    taskDescription: 'Not feeling well and want an appointment now.  Click the link below and have a physician meet you where you are.',
+    languageCode: 'en-US',
+    createTs: '2023-06-15T01:44:09.212444',
+    updateTs: '2023-06-15T01:44:09.212444',
+    createUser: 'per-915325069cdb42c783dd4601e1d27704',
+    updateUser: null,
+    deleteNbr: 0
+  },
+  termsOfService: {
+    termsOfServiceId: 1,
+    termsOfServiceText: "We provide you access and use of our websites, including and other Internet sites, mobile applications, and social media sites operated by or for Costco (collectively, the 'Sites'), subject to your compliance with these terms and conditions of use (the 'Site Terms' ). By accessing, browsing, and using the Sites, you agree to be bound by the Site Terms and all applicable law. If you do not agree to be bound by the Site Terms and applicable law each time you use the Sites or you do not have the authority to agree to or accept these Site Terms, you may not use the Sites.\n" +
+      "We provide you access and use of our websites, including and other Internet sites, mobile applications, and social media sites operated by or for Costco (collectively, the 'Sites'), subject to your compliance with these terms and conditions of use (the 'Site Terms' ). By accessing, browsing, and using the Sites, you agree to be bound by the Site Terms and all applicable law. If you do not agree to be bound by the Site Terms and applicable law each time you use the Sites or you do not have the authority to agree to or accept these Site Terms, you may not use the Sites.\n" +
+      "We provide you access and use of our websites, including and other Internet sites, mobile applications, and social media sites operated by or for Costco (collectively, the 'Sites'), subject to your compliance with these terms and conditions of use (the 'Site Terms' ). By accessing, browsing, and using the Sites, you agree to be bound by the Site Terms and all applicable law. If you do not agree to be bound by the Site Terms and applicable law each time you use the Sites or you do not have the authority to agree to or accept these Site Terms, you may not use the Sites.",
+    languageCode: 'en-US',
+    createTs: '2023-06-14T02:03:27.500006',
+    updateTs: '2023-06-14T02:03:27.500006',
+    createUser: 'per-915325069cdb42c783dd4601e1d27704',
+    updateUser: null,
+    deleteNbr: 0
+  }
+}
+{
+  task: {
+    taskId: 4,
+    taskTypeId: 1,
+    taskCode: 'tsk-b0098cc3968c4b3c9362328b3af48cca',
+    taskName: 'Ease lower back pain.',
+    selfReport: false,
+    confirmReport: false,
+    taskHeader: null,
+    taskDescription: null,
+    termsOfService: null,
+    createTs: '2023-06-14T05:46:07.844375',
+    updateTs: '2023-06-14T05:46:07.844375',
+    createUser: 'per-915325069cdb42c783dd4601e1d27704',
+    updateUser: null,
+    deleteNbr: 0
+  },
+  taskReward: {
+    taskId: 4,
+    taskRewardId: 3,
+    rewardTypeId: 1,
+    tenantCode: 'ten-ecada21e57154928a2bb959e8365b8b4',
+    taskRewardCode: 'trw-d8d0f148beef43bcaf471789deda87be',
+    reward: '{ "rewardAmount": "100"}',
+    priority: 3,
+    expiry: '0001-01-01T00:00:00',
+    minTaskDuration: 0,
+    maxTaskDuration: 0,
+    createTs: '2023-06-14T06:16:17.060301',
+    updateTs: '2023-06-14T06:16:17.060301',
+    createUser: 'per-915325069cdb42c783dd4601e1d27704',
+    updateUser: null,
+    deleteNbr: 0
+  },
+  taskDetail: {
+    taskId: 4,
+    taskDetailId: 5,
+    termsOfServiceId: 1,
+    taskHeader: 'Ease your lower back pain.',
+    taskDescription: 'Feel better today.  Try virtual physical therapy.  Click the link below.',
+    languageCode: 'en-US',
+    createTs: '2023-06-14T05:57:53.928795',
+    updateTs: '2023-06-14T05:57:53.928795',
+    createUser: 'per-915325069cdb42c783dd4601e1d27704',
+    updateUser: null,
+    deleteNbr: 0
+  },
+  termsOfService: {
+    termsOfServiceId: 1,
+    termsOfServiceText: "We provide you access and use of our websites, including and other Internet sites, mobile applications, and social media sites operated by or for Costco (collectively, the 'Sites'), subject to your compliance with these terms and conditions of use (the 'Site Terms' ). By accessing, browsing, and using the Sites, you agree to be bound by the Site Terms and all applicable law. If you do not agree to be bound by the Site Terms and applicable law each time you use the Sites or you do not have the authority to agree to or accept these Site Terms, you may not use the Sites.\n" +
+      "We provide you access and use of our websites, including and other Internet sites, mobile applications, and social media sites operated by or for Costco (collectively, the 'Sites'), subject to your compliance with these terms and conditions of use (the 'Site Terms' ). By accessing, browsing, and using the Sites, you agree to be bound by the Site Terms and all applicable law. If you do not agree to be bound by the Site Terms and applicable law each time you use the Sites or you do not have the authority to agree to or accept these Site Terms, you may not use the Sites.\n" +
+      "We provide you access and use of our websites, including and other Internet sites, mobile applications, and social media sites operated by or for Costco (collectively, the 'Sites'), subject to your compliance with these terms and conditions of use (the 'Site Terms' ). By accessing, browsing, and using the Sites, you agree to be bound by the Site Terms and all applicable law. If you do not agree to be bound by the Site Terms and applicable law each time you use the Sites or you do not have the authority to agree to or accept these Site Terms, you may not use the Sites.",
+    languageCode: 'en-US',
+    createTs: '2023-06-14T02:03:27.500006',
+    updateTs: '2023-06-14T02:03:27.500006',
+    createUser: 'per-915325069cdb42c783dd4601e1d27704',
+    updateUser: null,
+    deleteNbr: 0
+  }
+}

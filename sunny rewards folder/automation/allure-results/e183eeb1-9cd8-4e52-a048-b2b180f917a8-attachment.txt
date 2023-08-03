@@ -1,0 +1,24 @@
+[
+  {
+    walletId: 5,
+    walletTypeId: 1,
+    customerCode: 'cus-04c211b4339348509eaa870cdea59600',
+    sponsorCode: 'spo-c008f49aa31f4acd9aa6e2114bfb820e',
+    tenantCode: 'ten-ecada21e57154928a2bb959e8365b8b4',
+    walletCode: 'wal-1efe5b169e00463b9ab1bdd1b143790f',
+    masterWallet: false,
+    walletName: 'CONSUMER_REWARD',
+    active: true,
+    activeStartTs: '2023-06-04T16:21:04.953542',
+    activeEndTs: '2023-12-31T16:21:04.953542',
+    balance: 100,
+    earnMaximum: 500,
+    totalEarned: 150,
+    leftToEarn: 350,
+    createTs: '2023-06-04T16:21:04.953542',
+    updateTs: '0001-01-01T00:00:00',
+    createUser: 'per-915325069cdb42c783dd4601e1d27704',
+    updateUser: null,
+    deleteNbr: 0
+  }
+]

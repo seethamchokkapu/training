@@ -1,0 +1,5 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Mon Jul 03 16:40:03 IST 2023","Mon Jul 03 16:40:36 IST 2023","33553","chromium","","","","","Verifying data present in 'Actions for you' section",""
+"passed","Mon Jul 03 16:40:03 IST 2023","Mon Jul 03 16:40:17 IST 2023","14717","chromium","","","","","Verifying data present in 'Available to spend'section",""
+"passed","Mon Jul 03 16:44:58 IST 2023","Mon Jul 03 16:44:59 IST 2023","456","chromium","","","","","get data",""
+"failed","Fri Jun 30 15:57:50 IST 2023","Fri Jun 30 15:57:51 IST 2023","707","chromium","","","","","API get request",""

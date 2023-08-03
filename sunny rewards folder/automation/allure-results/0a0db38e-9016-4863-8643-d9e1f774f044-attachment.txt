@@ -1,0 +1,90 @@
+{
+  transactionId: 7,
+  walletId: 5,
+  transactionCode: 'txn-bb96c9a49a21469b97eada16817336fa',
+  transactionType: 'S',
+  previousBalance: 200,
+  transactionAmount: 50,
+  balance: 150,
+  prevWalletTxnCode: '5:txn-0a85d4280f9041b8aa9bb45990b260ef',
+  createTs: '2023-06-04T17:39:57.312593',
+  updateTs: '0001-01-01T00:00:00',
+  createUser: 'per-915325069cdb42c783dd4601e1d27704',
+  updateUser: null,
+  deleteNbr: 0
+}
+{
+  transactionDetailId: 7,
+  transactionId: 7,
+  transactionDetailType: 'REDEMPTION',
+  consumerCode: 'cmr-c69905fc68ce4f36851f877bae38f22e',
+  taskRewardCode: null,
+  notes: null,
+  redemptionRef: 'GIFT_CARD_ORDER_ID_001',
+  redemptionItemDescription: 'Home Depot gift card',
+  createTs: '2023-06-04T17:42:11.275019',
+  updateTs: '0001-01-01T00:00:00',
+  createUser: 'per-915325069cdb42c783dd4601e1d27704',
+  updateUser: null,
+  deleteNbr: 0
+}
+{
+  transactionId: 6,
+  walletId: 5,
+  transactionCode: 'txn-0a85d4280f9041b8aa9bb45990b260ef',
+  transactionType: 'A',
+  previousBalance: 75,
+  transactionAmount: 75,
+  balance: 150,
+  prevWalletTxnCode: '5:txn-32858438db464259802a448ee55e9d6f',
+  createTs: '2023-06-04T17:35:41.155987',
+  updateTs: '0001-01-01T00:00:00',
+  createUser: 'per-915325069cdb42c783dd4601e1d27704',
+  updateUser: null,
+  deleteNbr: 0
+}
+{
+  transactionDetailId: 6,
+  transactionId: 6,
+  transactionDetailType: 'REWARD',
+  consumerCode: 'cmr-c69905fc68ce4f36851f877bae38f22e',
+  taskRewardCode: 'trw-8a154edc602c49efb210d67a7bfe22b4',
+  notes: null,
+  redemptionRef: null,
+  redemptionItemDescription: null,
+  createTs: '2023-06-04T17:36:32.385217',
+  updateTs: '0001-01-01T00:00:00',
+  createUser: 'per-915325069cdb42c783dd4601e1d27704',
+  updateUser: null,
+  deleteNbr: 0
+}
+{
+  transactionId: 4,
+  walletId: 5,
+  transactionCode: 'txn-32858438db464259802a448ee55e9d6f',
+  transactionType: 'A',
+  previousBalance: 0,
+  transactionAmount: 75,
+  balance: 75,
+  prevWalletTxnCode: '5:txn-00000000000000000000000000000000',
+  createTs: '2023-06-04T17:30:02.196651',
+  updateTs: '0001-01-01T00:00:00',
+  createUser: 'per-915325069cdb42c783dd4601e1d27704',
+  updateUser: null,
+  deleteNbr: 0
+}
+{
+  transactionDetailId: 6,
+  transactionId: 6,
+  transactionDetailType: 'REWARD',
+  consumerCode: 'cmr-c69905fc68ce4f36851f877bae38f22e',
+  taskRewardCode: 'trw-8a154edc602c49efb210d67a7bfe22b4',
+  notes: null,
+  redemptionRef: null,
+  redemptionItemDescription: null,
+  createTs: '2023-06-04T17:36:32.385217',
+  updateTs: '0001-01-01T00:00:00',
+  createUser: 'per-915325069cdb42c783dd4601e1d27704',
+  updateUser: null,
+  deleteNbr: 0
+}

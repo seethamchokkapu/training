@@ -1,0 +1,4 @@
+Locator@(//span[text()="EY"])[1]
+Locator@(//span[text()="EY"])[1]
+Locator@(//span[text()="EY"])[1]
+Locator@(//span[text()="EY"])[1]

@@ -1,0 +1,6 @@
+APIResponse: 405 Method Not Allowed
+  Date: Fri, 30 Jun 2023 10:20:41 GMT
+  Content-Length: 0
+  Connection: close
+  Server: Kestrel
+  Allow: POST
